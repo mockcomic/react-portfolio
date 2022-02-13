@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UT-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type = "text/css" href="./assets/style.css">
+
+    <title> Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#work">Work</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+<section id="about" class="about">
+
+    <img src="./assets/profilePicture.jpg" alt="Profile Picture">
+
+    <article>
+        <h2>About Me</h2>
+
+        <p>
+            Welcome to my portfolio.
+            <br>
+            <br>
+            My name is Kurtis Hight.
+
+        </p>
+
+    </article>
+
+</section>
+
+<section id="work" class="work">
+    <h2>
+        Take a look at my Github
+    </h2>
+
+    <div class="repos">
+        <article class="repo">
+            <div class="repo-bio">
+                <h2>
+                    <a class="repo-img" href="https://github.com/mockcomic/MockBot" target="_blank"><img
+                            src="./assets/MockBot.png" alt="Discord bot logo" />
+                    </a>MockBot
+                </h2>
+                <div>
+                    <a class="repo-gif" href="https://github.com/mockcomic/MockBot" target="_blank"><img
+                            src="./assets/MockBot.gif" alt="Showing Discord bot commands" />
+                    </a>
+                </div>
+                <p>
+                    My discord bot is a fun side projcet I work on to add fun and useful tools for my discord server.
+                    I am currently running my discord bot off of a Raspberry Pi 4 running raspbian.
+                    Feel free to fork off of my repo or invite the bot to your server.
+                    A ".env" file is need with your discord token and tenor api key.
+                    Feedback is always great!
+                </p>
+
+                <h3> Functionality </h3>
+                <ul>
+                    <li>Send Gifs</li>
+                    <li>Play Music</li>
+                    <li>Assign Roles</li>
+                    <li>Purge Messages</li>
+                </ul>
+
+                <button class="button">
+                    <a href="https://github.com/mockcomic/MockBot" target="_blank" a>GitHub</a>
+                </button>
+
+                <button class="button">
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=775925298315264000&permissions=17988521216&scope=bot"
+                        target="_blank" s a>Invite Bot</a>
+                </button>
+            </div>
+        </article>
+
+        <article class="repo">
+            <div class="repo-bio">
+                <h2>
+                    Music Matcher
+                </h2>
+                <div>
+                    <a class="repo-gif"><img src="./assets/MusicMatcher.png" alt="musicMatch website homepage" />
+                    </a>
+                </div>
+                <p>
+                    A website where you search an artists and it gives you five similar artists and five of their top tracks with audio preivew and lyrics.
+                </p>
+                <button class="button">
+                    <a href="https://github.com/mockcomic/MusicMatcher" target="_blank" a>GitHub</a>
+                </button>
+                <button class="button">
+                    <a href="https://mockcomic.github.io/MusicMatcher/" target="_blank" a>Visit Site</a>
+                </button>
+            </div>
+        </article>
+
+        
+        <article class="repo">
+            <div class="repo-bio">
+                <h2>
+                    Flavor Express
+                </h2>
+                <div>
+                    <a class="repo-gif"><img src="./assets/flavor-express.png" alt="Flavor Express website homepage" />
+                    </a>
+                </div>
+                <p>
+                   A website where you can find delicious food recipes that are easy and fast to make.
+                </p>
+                <button class="button">
+                    <a href="https://github.com/mockcomic/FlavorExpress" target="_blank" a>GitHub</a>
+                </button>
+                <button class="button">
+                    <a href="https://flavor-express.herokuapp.com/" target="_blank" a>Visit Site</a>
+                </button>
+            </div>
+        </article>
+
+
+        <article class="repo">
+            <div class="repo-bio">
+                <h2>
+                    Run Buddy
+                </h2>
+                <div>
+                    <a class="repo-gif"><img src="./assets/RunBuddy.gif" alt="Showing off Run Buddy website" />
+                    </a>
+                </div>
+                <p>
+                    Run Buddy is a website I made during UC Berkly Full Stack development bootcamp.
+                </p>
+                <button class="button">
+                    <a href="https://github.com/mockcomic/RunBuddy" target="_blank" a>GitHub</a>
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+        <!-- <img class="repo-iamge" src="https://img.icons8.com/pastel-glyph/64/ffffff/website--v1.png" /> -->
+        <section id="contact" class="contact">
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">
+                    Reach Out
+                </h2>
+            </div>
+            <div class="contact-info">
+                <div class="contact-form">
+                    <form>
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name"/>
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+</html>
