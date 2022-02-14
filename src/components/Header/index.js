@@ -9,9 +9,6 @@ function Header(props) {
 
 	return (
 		<header className="flex-row px-1">
-			<h1>
-				<a href="/">Kurtis Hight</a>
-			</h1>
 			<nav>
 				<ul className="flex-row">
 					{categories.map(category => (
