@@ -2,13 +2,14 @@ import React from 'react';
 import PortfolioList from '../PortfolioList';
 
 function Portfolio({ currentCategory }) {
-	const { name, description } = currentCategory;
+	const { name,  } = currentCategory;
 	return (
-		<section id="portfolio">
+		<div id="portfolio">
+			<article className='repo'>
 			<h2>{name}</h2>
-			<p>{description}</p>
 			<PortfolioList />
-		</section>
+			</article>
+		</div>
 	);
 }
 

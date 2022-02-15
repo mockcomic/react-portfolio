@@ -5,19 +5,15 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import 'bulma/css/bulma.css'
+
 
 function App() {
 	const [categories] = useState([
-		{ name: 'About', description: 'About me page.' },
-		{
-			name: 'Portfolio',
-			description: 'List of my projects.',
-		},
-		{
-			name: 'Contact',
-			description: 'Reach out through email or social.',
-		},
-		{ name: 'Resume', description: 'Download resume.' },
+		{ name: 'About' },
+		{ name: 'Portfolio' },
+		{ name: 'Contact' },
+		{ name: 'Resume' },
 	]);
 
 	const renderPage = () => {
@@ -43,7 +39,7 @@ function App() {
 				setCurrentCategory={setCurrentCategory}
 				currentCategory={currentCategory}
 			></Header>
-			<main>{renderPage()}</main>
+			<main className="container.is-fullhd">{renderPage()}</main>
 			<Footer />
 		</div>
 	);

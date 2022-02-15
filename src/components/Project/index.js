@@ -3,7 +3,7 @@ import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ project }) => {
 	return (
-		<div className="repo">
+		<div className="mx-1">
 			<h3>
 				{project.name}
 				<span id="icon" className="mx-5">
@@ -17,7 +17,6 @@ const Project = ({ project }) => {
 				<img
 					src={require(`../../assets/projects/${project.src}`)}
 					alt={project.name}
-					className="img-thumbnail"
 					key={project.name}
 				/>
 				</div>

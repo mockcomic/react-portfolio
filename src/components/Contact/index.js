@@ -23,7 +23,7 @@ function ContactForm() {
 		if (e.target.name === 'email') {
 			const isValid = validateEmail(e.target.value);
 			if (!isValid) {
-				setErrorMessage('Your email is invalid.');
+				setErrorMessage('Please enter a valid email.');
 			} else {
 				setErrorMessage('');
 			}
@@ -41,46 +41,73 @@ function ContactForm() {
 	};
 
 	return (
-		<section className="contact-form">
-			<h1 data-testid="h1tag">Contact me</h1>
-			<form id="contact-form" onSubmit={handleSubmit}>
-				<div>
-					<label htmlFor="name">Name:</label>
-					<input
-						type="text"
-						name="name"
-						defaultValue={name}
-						onBlur={handleChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor="email">Email address:</label>
-					<input
-						type="email"
-						name="email"
-						defaultValue={email}
-						onBlur={handleChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor="message">Message:</label>
-					<textarea
-						name="message"
-						rows="5"
-						defaultValue={message}
-						onBlur={handleChange}
-					/>
-				</div>
-				{errorMessage && (
+		<div className=''>
+			<div >
+				<form  onSubmit={handleSubmit}>
 					<div>
-						<p className="error-text">{errorMessage}</p>
+						<label>Name:</label>
+						<input  className="input" type="text"
+							type="text"
+							name="name"
+							defaultValue={name}
+							onBlur={handleChange}
+						/>
 					</div>
-				)}
-				<button data-testid="button" type="submit">
-					Submit
-				</button>
-			</form>
-		</section>
+					<div>
+						<label>Email address:</label>
+						<input className="input" type="email"
+							type="email"
+							name="email"
+							defaultValue={email}
+							onBlur={handleChange}
+						/>
+					</div>
+					<div>
+						<label>Message:</label>
+						<textarea
+							className="textarea is-large" type="text"
+							name="message"
+							rows="5"
+							defaultValue={message}
+							onBlur={handleChange}
+						/>
+					</div>
+					<br></br>
+					<button className = 'button is-primary' data-testid="button" type="submit">
+						Submit
+					</button>
+
+					{errorMessage && (
+						<div>
+							<p className="notification is-danger">{errorMessage}</p>
+						</div>
+					)}
+				</form>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
 	);
 }
 

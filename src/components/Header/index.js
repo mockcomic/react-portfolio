@@ -8,7 +8,7 @@ function Header(props) {
 	}, [currentCategory]);
 
 	return (
-		<header className="flex-row px-1">
+		<header>
 			<nav>
 				<ul className="flex-row">
 					{categories.map(category => (

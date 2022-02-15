@@ -33,7 +33,7 @@ const PortfolioList = ({ tech }) => {
 
 	return (
 		<div>
-			<div className="repos">
+			<div>
 				{projects.map((project, i) => (
 					<Project project={project} />
 				))}
