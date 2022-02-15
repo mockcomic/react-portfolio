@@ -45,50 +45,6 @@ body {
 
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
-h2 {
-  font-size: 2.5rem; 
-  font-weight: bold;
-  margin: 5px 0;
-  line-height: 1.25;
-  color: var(--light);
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-  justify-content: center;
-
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
-h5 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
-h6 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
 
 p {
   font-size: 1.15rem;
@@ -135,11 +91,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-form {
-  width: 50%;
-  justify-content: center;
 }
 
 input {
@@ -205,11 +156,8 @@ textarea {
 }
 
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.foot{
+  padding: 100px;
   background-color:var(--background);
   color: white;
   text-align: center;

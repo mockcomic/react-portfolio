@@ -41,12 +41,20 @@ function ContactForm() {
 	};
 
 	return (
-		<div className=''>
-			<div >
-				<form  onSubmit={handleSubmit}>
+		<div>
+			<div>
+				{' '}
+				{errorMessage && (
+					<div>
+						<p className="notification is-danger">{errorMessage}</p>
+					</div>
+				)}
+				<form onSubmit={handleSubmit}>
 					<div>
 						<label>Name:</label>
-						<input  className="input" type="text"
+						<input
+							className="input"
+							type="text"
 							type="text"
 							name="name"
 							defaultValue={name}
@@ -55,7 +63,9 @@ function ContactForm() {
 					</div>
 					<div>
 						<label>Email address:</label>
-						<input className="input" type="email"
+						<input
+							className="input"
+							type="email"
 							type="email"
 							name="email"
 							defaultValue={email}
@@ -65,7 +75,8 @@ function ContactForm() {
 					<div>
 						<label>Message:</label>
 						<textarea
-							className="textarea is-large" type="text"
+							className="textarea is-large"
+							type="text"
 							name="message"
 							rows="5"
 							defaultValue={message}
@@ -73,40 +84,15 @@ function ContactForm() {
 						/>
 					</div>
 					<br></br>
-					<button className = 'button is-primary' data-testid="button" type="submit">
+					<button
+						className="button is-primary"
+						data-testid="button"
+						type="submit"
+					>
 						Submit
 					</button>
-
-					{errorMessage && (
-						<div>
-							<p className="notification is-danger">{errorMessage}</p>
-						</div>
-					)}
 				</form>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</div>
 	);
 }

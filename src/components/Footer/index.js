@@ -4,21 +4,17 @@ import { ImLinkedin } from 'react-icons/im';
 
 const Footer = () => {
 	return (
-		<footer className="w-100 mt-auto bg-secondary p-4">
-			<div className="container">
-				<h6>
-					<span>
-						<a href="https://github.com/mockcomic">
-							<BsGithub />
-						</a>
-						<a href="https://www.linkedin.com/in/kurtishight/">
-							<ImLinkedin />
-						</a>
-						<a href="https://twitter.com/Mockkomic">
-							<BsTwitter />
-						</a>
-					</span>
-				</h6>
+		<footer className="foot">
+			<div>
+				<a className="icon is-large" href="https://github.com/mockcomic">
+					<BsGithub />
+				</a>
+				<a className="icon is-large" href="https://www.linkedin.com/in/kurtishight/">
+					<ImLinkedin />
+				</a>
+				<a className="icon is-large" href="https://twitter.com/Mockkomic">
+					<BsTwitter />
+				</a>
 			</div>
 		</footer>
 	);
