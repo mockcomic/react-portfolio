@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e5a222e1.css",
+    "main.js": "/react-portfolio/static/js/main.5a359b17.js",
+    "static/media/RunBuddy.gif": "/react-portfolio/static/media/RunBuddy.b89641b3135421318c16.gif",
+    "static/media/MockBot.gif": "/react-portfolio/static/media/MockBot.085891baa12893681334.gif",
+    "static/media/flavor-express.png": "/react-portfolio/static/media/flavor-express.56f087f8c25a75a4eaf2.png",
+    "static/media/profilePicture.jpg": "/react-portfolio/static/media/profilePicture.e4de353c68967de94c61.jpg",
+    "static/media/MusicMatcher.png": "/react-portfolio/static/media/MusicMatcher.773057ab6d918e95325b.png",
+    "static/media/weather.png": "/react-portfolio/static/media/weather.10572e3fc5c241c97e50.png",
+    "static/media/PasswordGenerator.png": "/react-portfolio/static/media/PasswordGenerator.0953cf4b7e76dff47869.png",
+    "static/media/MockBot.png": "/react-portfolio/static/media/MockBot.f24de9ae156a0b44be30.png",
+    "static/media/codingQuiz.png": "/react-portfolio/static/media/codingQuiz.546ac42975218930b74e.png",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.31d6cfe0d16ae931b73c.pdf",
+    "main.e5a222e1.css.map": "/react-portfolio/static/css/main.e5a222e1.css.map",
+    "main.5a359b17.js.map": "/react-portfolio/static/js/main.5a359b17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5a222e1.css",
+    "static/js/main.5a359b17.js"
+  ]
+}
