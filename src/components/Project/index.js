@@ -3,15 +3,15 @@ import { BsGithub } from 'react-icons/bs';
 
 const Project = ({ project }) => {
 	return (
-		<div className="mx-1">
-			<h3>
+		<div className="section">
+			<h1 className="message-header">
 				{project.name}
 				<span id="icon" className="mx-5">
 					<a href={project.git}>
 						<BsGithub />
 					</a>
 				</span>
-			</h3>
+			</h1>
 			<a href={project.link}>
 				<div>
 				<img
